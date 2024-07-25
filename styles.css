@@ -27,6 +27,89 @@ header {
     z-index: 100;
 }
 
+/* Gradient color update for entire website */
+#hero {
+    background: linear-gradient(to bottom, #007BFF, #0094FF);
+    padding: 80px 20px;
+}
+
+#about {
+    background: linear-gradient(to bottom, #0094FF, #00A9FF);
+    padding: 80px 20px;
+}
+
+#experience {
+    background: linear-gradient(to bottom, #00A9FF, #00C1FF);
+    padding: 80px 0;
+}
+
+#projects {
+    background: linear-gradient(to bottom, #00C1FF, #00DCFF);
+    padding: 80px 20px;
+}
+
+#contact {
+    background: linear-gradient(to bottom, #00DCFF, #00F4FF);
+    padding: 80px 20px;
+}
+
+footer {
+    background: linear-gradient(to bottom, #00F4FF, #00FFFF);
+    padding: 40px 20px;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.experience-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.experience-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.experience-item h4 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.experience-item .date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience-item li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.experience-item img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -70,7 +153,6 @@ nav {
 /* Hero section styles */
 #hero {
     height: 100vh;
-    background: linear-gradient(to bottom, #9370db, #8a2be2);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,7 +214,6 @@ section {
 
 /* About section styles */
 #about {
-    background: linear-gradient(to bottom, #8a2be2, #a084e8); /* Match bottom of #hero and transition to lighter shade */
     padding: 80px 20px;
 }
 
@@ -158,7 +239,7 @@ section {
 
 /* Projects section styles */
 #projects {
-    background: linear-gradient(to bottom, #a084e8, #b9a5f4); /* Transition to even lighter shade */
+    padding: 80px 20px;
 }
 
 .project-grid {
@@ -198,7 +279,7 @@ section {
 
 /* Contact section styles */
 #contact {
-    background: linear-gradient(to bottom, #b9a5f4, #d2c5ff); /* Transition to the lightest shade */
+    padding: 80px 20px;
 }
 
 form {
@@ -240,8 +321,6 @@ form button:hover {
 
 /* Footer styles */
 footer {
-    background: linear-gradient(to bottom, #d2c5ff, #ebdffe); /* Light gradient */
-    color: #333;
     padding: 40px 20px;
 }
 
